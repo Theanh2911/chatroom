@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" const="text/html;charset=UTF-8"/>
+        <link href="http://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+        <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAABmVP4AAAAAAFtq/wBtR/4AZVf+AHY0/QBrSv4AY1r+AL21/wD9/P8Aak3+AGJd/gBwQP4Ax8z/AGhQ/gD///8Aei39AO7u/wBgYP4AZlP+APLu/wBnU/4AjVj9AGVW/gB2M/0AdzP9AGtJ/gBsSf4AiFH9APv7/wByPP4AeSn9AGpM/gByLP0AvcH/AGJc/gB6LP0AXmX/AGFf/gBZaP8AZ1L+AG1F/gDp5v8AZVX+AGZV/gBsSP4AZFj+AHM7/gBrS/4AY1v+AHQ4/QByPv4AXV7+AGlO/gBeZP8AYV7+AGdR/gBfYf4AbkT+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ8PDw8PDw8PDw8PDw8PDwEPDw8PDw0nNjY0EQ8PDw8BDw8PDwIlNhImIwcEDw8PAQ8PDwI2ORILBy4rKA4PDwEPDyI2EjcxLhcTDjUwKg8BDw85JiMHFwA4NSAaAzoPAQ8PIwcuLCgOCgYtOgwMDwEPDzYXFQ41Bi06OgweHg8BDw8INjUgGyk6DDMeMiEPAQ8PDzYGHRQMDB4yMgUJDwEPDw8PNg8PDy8yBQUQDw8BDw8PDw8PDw8YBRkkDw8PAQ8PDw8PDw8PHCQkDw8PDwEPDw8PDw8PDxYfDw8PDw8BDw8PDw8PDw8PDw8PDw8PAQ8PDw8PDw8PDw8PDw8PD4AAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAAA=" rel="icon" type="image/x-icon" />
+        <title>Tin Đờ</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Tin đờ</h1>
+        </header>
+
+        <section>
+            <div id="change_username">
+                <label for="username"></label>
+                <input id="username" type="text"/>
+                <button id="send_username" type="button">Change username</button>
+            </div>
+        </section>
+        <section>
+            <div id="change_username">
+                <button id="send_username" type="button">join in as anonymous</button>
+            </div>
+        </section>
+
+        <section id="chatroom">
+            <section id="feedback"></section>
+        </section>
+
+        <section id="input_zone">
+            <label for="message"></label>
+            <input id="message" class="vertical-align" type="text"/>
+            <button id="send_message" class="vertical-align" type="button">Send</button>
+        </section>
+
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="chat.js"></script>
+    </body>
+</html>
